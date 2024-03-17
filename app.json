@@ -1,5 +1,6 @@
 {
   "expo": {
+
     "name": "segundoparcial",
     "slug": "segundoparcial",
     "version": "1.0.0",
@@ -9,7 +10,15 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "plugins":[
+        [
+          "expo-image-picker",
+          {
+            "photosPermission": "The app accesses your photos to let you share them with your friends."
+          }
+        ]
+      ]
     },
     "assetBundlePatterns": [
       "**/*"
@@ -25,6 +34,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "23ec5052-72eb-441e-b1f1-2f165fdb572e"
+      }
     }
   }
 }
